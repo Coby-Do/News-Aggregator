@@ -34,9 +34,9 @@ pip install -r requirements.txt
 python manage.py migrate
 ```
 
-4. Create a News API key from https://newsapi.org/ and add it to the 'settings.py' file:
+4. Create a News API key from https://newsapi.org/ and attach the key to the API link
 ```bash
-NEWS_API_KEY = 'your_api_key_here'
+key = "https://newsapi.org/v2/top-headlines?country=us&apiKey=<INSERT KEY>"
 ```
 
 5. Run the Django development server:
@@ -45,8 +45,7 @@ python manage.py runserver
 ```
 
 6. Open your web browser and navigate to http://127.0.0.1:8000/ to access the News Aggregator Website.
-```bash
-```
+<img width="950" alt="image" src="https://user-images.githubusercontent.com/111834642/227087178-9578b9f9-ed45-4ac0-97f7-88e61113b906.png">
 
 ## License
 This project is released under the MIT License. Please see the 'LICENSE' file for more information.
